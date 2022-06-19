@@ -1,15 +1,19 @@
-body {background-image:url(https://images.unsplash.com/photo-1508615070457-7baeba4003ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    background-position:center center;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-size:cover;
-      margin:0px;}
+body {background-color: #ffffff;
+      margin:0px;
+      font-family: 'Ubuntu', sans-serif;}
+
+     /* Fondo de imagen fija
+ background-image:url(https://images.unsplash.com/photo-1508615070457-7baeba4003ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+ background-position:center center;
+ background-attachment:fixed;
+ background-repeat:no-repeat;
+ background-size:cover; */
 
 h1 {}
-h6 {color: #ffffff;}
+
+h6 {color: #black;}
+
 p {font-size: 1.5rem;}
-
-
 
 .header{margin: 40px 20px 0;
         font-size: 0;}
@@ -20,23 +24,23 @@ p {font-size: 1.5rem;}
             height: 100%;
             line-height: 45px;}
 
-.navbar {background-color: #E6F3E4;
-         position:fixed}
+.navbar {position:fixed}
+
+.search_bar {ba}
 
 .main {margin: 100px;
        margin-top: 200px;
-       margin-bottom: 200PX;
+       margin-bottom: 200PX;}
 
-       }
-
-.main h1 {margin: 15px 13%;}
+.main h1 {margin: 15px 13%;
+          font-family: 'Ubuntu', sans-serif;}
 
 .features{display: grid;
           padding: 3%;
           grid-template: repeat(3,1fr) / repeat(3, 1fr);
           height: 340px;
           margin-bottom: 1rem;
-          background-color: #025157;}
+          background-color: #61cde9;}
 
 .feature_content{background-color: #ffffff;
                  border-radius: 10px;
@@ -52,24 +56,20 @@ p {font-size: 1.5rem;}
 
 .movimiento:hover { width: 50%;}
 
-
-
-.card_container{background-color: #B6CAB3;
+.card_container{background-color: #9BD093;
                 display: flex;
                 gap: 10px;}
 
 .container {text-align: center;
             padding: 5%;}
+.container h1 {color: #ffffff;}
+
+.container p {color: #ffffff;}
 
 .mensaje_icon a{background-color: none;
           position: fixed;
           bottom:2%;
           right: 1%;}
-.mensaje_icon .card-body{
-                         width: 2rem;
+
+.mensaje_icon .card-body{width: 2rem;
                          height: 4rem;}
-
-
-
-
-
