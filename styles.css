@@ -1,6 +1,10 @@
 body {background-color: #A6A6A6;
       margin: 0px;}
 
+h1 {}
+
+p {font-size: 1.5rem;}
+
 .header{margin: 40px 20px 0;
         font-size: 0;}
 
@@ -13,18 +17,37 @@ body {background-color: #A6A6A6;
 .navbar {background-color: aliceblue;
          position:fixed}
 
+.main {margin: 100px;
+       margin-top: 200px;
+       margin-bottom: 200PX;}
+
+.main h1 {margin: 15px 13%;}
+
+.features{display: grid;
+          padding: 5%;
+          grid-template: repeat(3,1fr) / repeat(3, 1fr);
+          height: 350px;
+          margin-bottom: -1rem;
+          background-color: #025157;}
+
+.feature_content{background-color: #ffffff;
+                 border-radius: 10px;
+                 height: 100%;
+                 display: flex;
+                 align-items: center;
+                 overflow: hidden;}
+.feature_card {margin: 5%;}
+
+.features h3 {text-align: center;}
+
+.movimiento {transition: width 1s;}
+
+.movimiento:hover { width: 50%;}
+
+.card_container{display: flex; 
+    gap: 10px;}
+
+.container {text-align: center;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 425px){}
