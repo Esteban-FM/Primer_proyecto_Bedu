@@ -60,7 +60,7 @@ p {font-size: 1.5rem;}
 
 .movimiento {transition: width 1s;}
 
-.movimiento:hover { width: 50%;}
+.movimiento:hover { width: 100%;}
 
 .card_container{background-color: #212020;
                 display: flex;
