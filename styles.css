@@ -87,6 +87,10 @@ p {font-size: 1.5rem;}
          height: 0%;
          background-color: #212020;
          border-color: #ffffff;
-         padding: 2v%;}
+         padding: 2%;}
 
 .footer h6{color:#ffffff;}
+
+@media screen and (max-widht:750) {
+        .body p {font-size: 100vw;}
+}
