@@ -17,9 +17,7 @@ p {font-size: 1.5rem;}
             height: 100%;
             line-height: 45px;}
 
-
 .navbar {position:fixed}
-
 
 .main {padding: 5% ;
         margin: 100px;
@@ -33,15 +31,12 @@ p {font-size: 1.5rem;}
 .main p {text-align: center;}
 
 
-
-
-
 .features{display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          align-content: stretch;
-          justify-content: space-between;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
           padding: 10%;
           grid-template: repeat(3,1fr) / repeat(3, 1fr);
           height: 500px;
@@ -64,6 +59,9 @@ p {font-size: 1.5rem;}
 
 .card_container{background-color: #212020;
                 display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                align-items: center;
                 gap: 10px;}
 
 .item {width: 100%;
@@ -81,6 +79,65 @@ p {font-size: 1.5rem;}
           bottom:2%;
           right: 1%;}
 
+.open-button {background-color: none;}
+
+/* Estilos para chat */
+
+.open-button {
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 35px;
+        right: 20px;
+        width: 110px;
+      }
+      .chat-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+      }
+      .form-container {
+        max-width: 277px;
+        padding: 10px;
+        background-color: white;
+      }
+      .form-container textarea {
+        width: 100%;
+        padding: 30px;
+        margin: 10px 5px 10px 5px;
+        border: none;
+        background: #f1f1f1;
+        resize: none;
+        min-height: 95px;
+      }
+      .form-container textarea:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+
+      .form-container .btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 10px 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+      }
+      .form-container .cancel {
+        background-color: red;
+      }
+      .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+
 .footer {display:flex;
         justify-content: center;
          width: 100%;
@@ -91,6 +148,9 @@ p {font-size: 1.5rem;}
 
 .footer h6{color:#ffffff;}
 
-@media screen and (max-widht:750) {
-        .body p {font-size: 100vw;}
-}
+@media screen and (max-width:750) {
+        p {font-size:2vw;}
+        .item { width: 100%;
+                max-width: 400px;
+                height: auto;}
+        }

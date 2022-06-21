@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Cimarrone</title>
 </head>
 
@@ -149,19 +151,33 @@
     
     <hr size="50px" color="#ffffff">
     
-    
-    
     <section class="mensaje_icon">
-        <a  href="">
-            <lord-icon src="https://cdn.lordicon.com/uvextprq.json" trigger="loop" colors="primary:#ffffff" state="hover" style="width:60px;height:60px"></lord-icon>
+        <a>
+            <button type="button" class="btn open-button" onclick="openForm()">
+                 <lord-icon src="https://cdn.lordicon.com/uvextprq.json" onclick="openForm()" trigger="loop" colors="primary:#ffffff" state="hover" style="width:60px;height:60px"></lord-icon>
+            </button>
+                <div class="chat-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                          <h5>Hola, ¿Podemos ayudarte?</h5>
+                          <label for="msg"></label>
+                          <textarea placeholder="Type message.." name="msg" required></textarea>
+                          <button type="submit" class="btn">Send</button>
+                          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                </div>
         </a>
     </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14936.478311276738!2d-103.4204739!3d20.6239822!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe783a19bc381d0e1!2sDe%20Piel%20y%20Algo%20M%C3%A1s%20Guadalajara!5e0!3m2!1ses-419!2smx!4v1655778241009!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <hr size="50px" color="#ffffff">
     
     <footer class="footer">
         <section>
         <div class="col-12 col-md-12">
             <div class="widget sidebar widget_text text-2">
-                
             </div>
                 <div class="btn rounded float-end">
                     <h6>© 2022 Cimarrone, Inc.</h6>
@@ -178,6 +194,17 @@
     
     <!--script prueba de lordicon-->
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+
     <!--scripts normales-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
